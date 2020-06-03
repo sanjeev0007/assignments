@@ -1,0 +1,12 @@
+To run this
+
+go to terminal and type
+
+npm run start
+
+it will start server on port 5000 (as I set this)
+
+now,
+ for checking endpoints I have used postman application
+ then check for GET,POST,DELETE routes
+ they all are working well.
