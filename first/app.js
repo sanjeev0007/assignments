@@ -43,17 +43,27 @@ app.post('/addname', (req, res) => {
 });
 
 // Retrive the users form Database in console
-app.get('/users', (req, res) => {
+app.get('/users', function (req, res) {
   User.find({}, function (err, users) {
-    if (err) {
-      console.log('THATS ERROR :( !!');
-      console.log(err);
+    if (!err) {
+      res.send(users);
     } else {
-      console.log('ALL THE USERS.....');
-      console.log(users);
+      res.send(err);
     }
   });
 });
+
+// app.get('/users', (req, res) => {
+//   User.find({}, function (err, users) {
+//     if (err) {
+//       console.log('THATS ERROR :( !!');
+//       console.log(err);
+//     } else {
+//       console.log('ALL THE USERS.....');
+//       console.log(users);
+//     }
+//   });
+// });
 
 app.listen(port, () => {
   console.log('Server listening on port ' + port);
