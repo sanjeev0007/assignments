@@ -42,7 +42,7 @@ app.post('/addname', (req, res) => {
     });
 });
 
-// Retrive the users form Database in console
+// Retrive the users form Database
 app.get('/users', function (req, res) {
   User.find({}, function (err, users) {
     if (!err) {
