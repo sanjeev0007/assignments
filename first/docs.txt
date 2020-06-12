@@ -4,4 +4,4 @@ node app.js
 
 then add username
 
-then you can see the data you have entered will be saved in database and will display in terminal
+then you can see the data you have entered will be saved in database and will display in /users.
